@@ -1,0 +1,30 @@
+html,
+body {
+  height: 100%;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+  position: relative;
+}
+.active::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 2px;
+  background-color: rgb(248, 23, 23);
+  bottom: 5px;
+}
+img,
+video {
+  max-width: 100%;
+  border: 10px;
+}
+.take {
+  background-color: rgba(88, 129, 87, 0.5);
+}
+#canvas {
+  display: none;
+}
